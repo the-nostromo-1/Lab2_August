@@ -27,11 +27,11 @@ int main() {
 	case 0:
 		cout << "single digit";
 		break;
-
 	case 1:
 		cout << "Ten";
 		break;
-
+	case 2:
+		cout << "Twenty";
+		break;
 	}
-
 }
