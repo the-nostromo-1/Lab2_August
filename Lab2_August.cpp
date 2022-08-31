@@ -25,6 +25,7 @@ int main() {
 	switch (tens) {
 
 	case 0:
+		cout << "single digit";
 		break;
 
 	case 1:
