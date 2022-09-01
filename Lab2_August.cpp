@@ -7,6 +7,7 @@ David Tinley
 
 #include <iostream>
 
+using namespace std;
 using std::cin; using std::cout; using std::endl;
 
 int main() {
@@ -20,22 +21,53 @@ int main() {
 	int tens = x / 10; // extracts the digit that is in the "tenths" place of the # number entered
 	int singles = x % 10; // extracts the digit that is in the "ones or singles" place of the # number entered
 
-	// cout << tens << singles << endl;
+	// cout << number_entered << endl;
 
-	switch (tens) {
+	switch (x) {
+
+	case 11:
+		cout << "Eleven";
+		return 0;
+	case 12:
+		cout << "Twelve";
+		return 0;
+	case 13:
+		cout << "Thirteen";
+		return 0;
+	case 14:
+		cout << "Fourteen";
+		return 0;
+	case 15:
+		cout << "Fifteen";
+		return 0;
+	case 16:
+		cout << "Sixteen";
+		return 0;
+	case 17:
+		cout << "Seventeen";
+		return 0;
+	case 18:
+		cout << "Eighteen";
+		return 0;
+	case 19:
+		cout << "Nineteen";
+		return 0;
+	}
+
+	switch (tens) { // switch is a selection statement that tests each case below
 
 		//case 0:
 			//cout << "single digit";
 			//break;
 	case 1:
-		cout << "Ten";
+		cout << "Ten ";
 		break;
 	case 2:
-		cout << "Twenty";
+		cout << "Twenty ";
 		break;
 
 	case 3:
-		cout << "Thirty";
+		cout << "Thirty ";
 		break;
 	}
 
@@ -84,5 +116,5 @@ int main() {
 	default:
 		cout << "Please enter a number between 1 and 31.";
 	}
-
+	return 0;
 }
