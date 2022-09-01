@@ -21,13 +21,11 @@ int main() {
 	int tens = x / 10; // extracts the digit that is in the "tenths" place of the # number entered
 	int singles = x % 10; // extracts the digit that is in the "ones or singles" place of the # number entered
 
-	// cout << number_entered << endl;
-
-	switch (x) {
+	switch (x) { // checking the x variable for values 11 - 19
 
 	case 11:
 		cout << "Eleven";
-		return 0;
+		return 0; // return 0 will have the program cease and not jump to the tens and singles cases since they would be unnecessary
 	case 12:
 		cout << "Twelve";
 		return 0;
