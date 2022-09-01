@@ -54,16 +54,12 @@ int main() {
 
 	switch (tens) { // switch is a selection statement that tests each case below
 
-		//case 0:
-			//cout << "single digit";
-			//break;
 	case 1:
 		cout << "Ten ";
 		break;
 	case 2:
 		cout << "Twenty ";
 		break;
-
 	case 3:
 		cout << "Thirty ";
 		break;
@@ -74,43 +70,33 @@ int main() {
 	case 0:
 		cout << "";
 		break;
-
 	case 1:
 		cout << "One";
 		break;
-
 	case 2:
 		cout << "Two";
 		break;
-
 	case 3:
 		cout << "Three";
 		break;
-
 	case 4:
 		cout << "Four";
 		break;
-
 	case 5:
 		cout << "Five";
 		break;
-
 	case 6:
 		cout << "Six";
 		break;
-
 	case 7:
 		cout << "Seven";
 		break;
-
 	case 8:
 		cout << "Eight";
 		break;
-
 	case 9:
 		cout << "Nine";
 		break;
-
 	default:
 		cout << "Please enter a number between 1 and 31.";
 	}
