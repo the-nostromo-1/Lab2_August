@@ -8,52 +8,54 @@ David Tinley
 #include <iostream>
 
 using namespace std;
-using std::cin; using std::cout; using std::endl;
 
 int main() {
 
-	int x;
+	int number_input;
 
-	cout << "Please enter a number between 1 and 31: " << endl;
+	cout << "Please enter a number between 1 and 39: " << endl;
 
-	cin >> x; // user inputs a number that is stored in the x integer variable
+	cin >> number_input; // user inputs a number that is stored in the x integer variable
 
-	int tens = x / 10; // extracts the digit that is in the "tenths" place of the # number entered
-	int singles = x % 10; // extracts the digit that is in the "ones or singles" place of the # number entered
+	int tens = number_input / 10; // extracts the digit that is in the "tenths" place of the # number entered
+	int singles = number_input % 10; // extracts the digit that is in the "ones or singles" place of the # number entered
 
-	switch (x) { // checking the x variable for values 11 - 19
+	switch (number_input) { // checking the number_input variable for values 11 - 19
 
 	case 11:
-		cout << "Eleven";
+		cout << "Eleven\n";
 		return 0; // return 0 will have the program cease and not jump to the tens and singles cases since they would be unnecessary
 	case 12:
-		cout << "Twelve";
+		cout << "Twelve\n";
 		return 0;
 	case 13:
-		cout << "Thirteen";
+		cout << "Thirteen\n";
 		return 0;
 	case 14:
-		cout << "Fourteen";
+		cout << "Fourteen\n";
 		return 0;
 	case 15:
-		cout << "Fifteen";
+		cout << "Fifteen\n";
 		return 0;
 	case 16:
-		cout << "Sixteen";
+		cout << "Sixteen\n";
 		return 0;
 	case 17:
-		cout << "Seventeen";
+		cout << "Seventeen\n";
 		return 0;
 	case 18:
-		cout << "Eighteen";
+		cout << "Eighteen\n";
 		return 0;
 	case 19:
-		cout << "Nineteen";
+		cout << "Nineteen\n";
 		return 0;
 	}
 
 	switch (tens) { // switch is a selection statement that tests each case below
 
+	case 0:
+		cout << "";
+		break;
 	case 1:
 		cout << "Ten ";
 		break;
@@ -63,42 +65,40 @@ int main() {
 	case 3:
 		cout << "Thirty ";
 		break;
+	default:
+		cout << "Please enter a number between 1 and 39.";
+		return 0;
 	}
 
 	switch (singles) {
 
-	case 0:
-		cout << "";
-		break;
 	case 1:
-		cout << "One";
+		cout << "One\n";
 		break;
 	case 2:
-		cout << "Two";
+		cout << "Two\n";
 		break;
 	case 3:
-		cout << "Three";
+		cout << "Three\n";
 		break;
 	case 4:
-		cout << "Four";
+		cout << "Four\n";
 		break;
 	case 5:
-		cout << "Five";
+		cout << "Five\n";
 		break;
 	case 6:
-		cout << "Six";
+		cout << "Six\n";
 		break;
 	case 7:
-		cout << "Seven";
+		cout << "Seven\n";
 		break;
 	case 8:
-		cout << "Eight";
+		cout << "Eight\n";
 		break;
 	case 9:
-		cout << "Nine";
+		cout << "Nine\n";
 		break;
-	default:
-		cout << "Please enter a number between 1 and 31.";
 	}
 	return 0;
 }
