@@ -1,9 +1,8 @@
-/*
-Program that takes numerical input and outputs the word for the number.
-i.e. 23 = "twenty three"
-David Tinley
-08/30/2022
-*/
+// Program that takes numerical input and outputs the word for the number.
+// i.e. 23 = "twenty three"
+// David Tinley
+// 08/30/2022
+
 
 #include <iostream>
 
@@ -13,7 +12,7 @@ int main() {
 
 	int number_input;
 
-	cout << "Please enter a number between 1 and 39: " << endl;
+	cout << "Please enter a number between 1 and 39: \n";
 
 	cin >> number_input; // user inputs a number that is stored in the x integer variable
 
