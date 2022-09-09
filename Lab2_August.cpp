@@ -10,14 +10,10 @@ using namespace std;
 
 int main() {
 
-	int number_input;
-
 	cout << "Please enter a number between 1 and 39: \n";
 
+	int number_input;
 	cin >> number_input; // user inputs a number that is stored in the x integer variable
-
-	int tens = number_input / 10; // extracts the digit that is in the "tenths" place of the # number entered
-	int singles = number_input % 10; // extracts the digit that is in the "ones or singles" place of the # number entered
 
 	switch (number_input) { // checking the number_input variable for values 11 - 19
 
@@ -50,6 +46,8 @@ int main() {
 		return 0;
 	}
 
+	int tens = number_input / 10; // extracts the digit that is in the "tenths" place of the # number entered
+
 	switch (tens) { // switch is a selection statement that tests each case below
 
 	case 0:
@@ -68,6 +66,8 @@ int main() {
 		cout << "Please enter a number between 1 and 39.";
 		return 0;
 	}
+
+	int singles = number_input % 10; // extracts the digit that is in the "ones or singles" place of the # number entered
 
 	switch (singles) {
 
